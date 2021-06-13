@@ -1,20 +1,7 @@
 $(document).ready(function(){
 	"use strict";
-	/*
-	  ==============================================================
-		   Search Script
-	  ==============================================================
-	*/
-	$(".search-fld").on('click',function(){
-		if($(this).hasClass('minus')){        
-			$(this).toggleClass("plus minus");
-			$('.search-wrapper-area').fadeOut();
-		}else{
-			$('.search-wrapper-area').fadeIn();
-			$(this).toggleClass("minus plus");
-		}
-	});
-		
+
+
 	/*
 	  ==============================================================
 		   Bx-Slider Script
@@ -22,29 +9,15 @@ $(document).ready(function(){
 	*/
 	if($('.main_slider').length){
 		$('.main_slider').bxSlider({
-			speed:500,
-			auto: true,				
-			onSlideAfter: function(){
-				$(".ct_banner_caption h4").addClass("animated fadeInDown");
-				$(".ct_banner_caption span").addClass("animated fadeInDown");
-				$(".ct_banner_caption h2").addClass("animated fadeInDown");
-				$(".ct_banner_caption p").addClass("animated fadeInDown");
-				$(".ct_banner_caption a").addClass("animated fadeInDown");
-			},
-			onSlideBefore: function(){
-				$(".ct_banner_caption h4").removeClass("animated fadeInDown");
-				$(".ct_banner_caption span").removeClass("animated fadeInDown");
-				$(".ct_banner_caption h2").removeClass("animated fadeInDown");
-				$(".ct_banner_caption p").removeClass("animated fadeInDown");
-				$(".ct_banner_caption a").removeClass("animated fadeInDown");
-			}
+			speed:1500,
+			auto: true
 		});
 	}
 	/*
 	  =======================================================================
 		  		 Chosen Script Script
 	  =======================================================================
-	*/	
+	*/
 	if($(".chosen-select").length){
 		$(".chosen-select").chosen()
 	}
@@ -71,7 +44,7 @@ $(document).ready(function(){
 			}
 		})
 	}
-	
+
 	/* ---------------------------------------------------------------------- */
 	/*	DL Responsive Menu
 	/* ---------------------------------------------------------------------- */
@@ -81,14 +54,14 @@ $(document).ready(function(){
 				if( $(this).siblings('a').attr('href') && $(this).siblings('a').attr('href') != '#' ){
 					var parent_nav = $('<li class="menu-item kode-parent-menu"></li>');
 					parent_nav.append($(this).siblings('a').clone());
-					
+
 					$(this).prepend(parent_nav);
 				}
 			});
 			$(this).dlmenu();
 		});
 	}
-	
+
 	/*
 	  ==============================================================
 		   Click to Scroll Top Script
@@ -101,13 +74,13 @@ $(document).ready(function(){
 				$('.back_to_top').css('opacity','0');
 			}
 		});
-		
+
 		//Click event to scroll to top
 		$('.back_to_top').on('click',function(){
 			$('html, body').animate({scrollTop : 0},800);
-			
+
 		});
-	
+
 	/*
 	  ==============================================================
 		   Most Popular Courses Script
@@ -152,28 +125,28 @@ $(document).ready(function(){
 			}
 		})
 	}
-	
+
 	/* ==================================================================
 							Time Counter Script
 	  	=================================================================	*/
 		if($('.countdown').length){
 			$('.countdown').downCount({ date: '08/08/2017 12:00:00', offset: +1 });
 		}
-		
+
 	/* ==================================================================
 					Number Count Up(WayPoints) Script
-	  =================================================================	*/		
+	  =================================================================	*/
 		if($('.counter').length){
 			$('.counter').counterUp({
 				delay: 10,
 				time: 1000
 			});
 		}
-		
+
 	/* ==================================================================
 					Testimonial Pager Script
 	  =================================================================	*/
-	  if($('.aside_test_slider').length){	
+	  if($('.aside_test_slider').length){
 		$('.aside_test_slider').bxSlider({
 		  pagerCustom: '#bx-pager'
 		});
@@ -199,7 +172,7 @@ $(document).ready(function(){
 		  }
 		});
 	}
-	
+
 	if($('.accord_list_1').length){
 		//custom animation for open/close
 		$.fn.slideFadeToggle = function(speed, easing, callback) {
@@ -218,7 +191,7 @@ $(document).ready(function(){
 		  }
 		});
 	}
-	
+
 	/*
 	  =======================================================================
 		  		 Pretty Photo Script
@@ -227,7 +200,7 @@ $(document).ready(function(){
 	if($("a[data-rel^='prettyPhoto']").length){
 		$("a[data-rel^='prettyPhoto']").prettyPhoto();
 	}
-	
+
 	/*
 	  =======================================================================
 		  		Map Script Script
@@ -236,7 +209,7 @@ $(document).ready(function(){
 	if($('#map-canvas').length){
 		google.maps.event.addDomListener(window, 'load', initialize);
 	}
-	
+
 /*
   =======================================================================
 			Google Map Function
@@ -289,7 +262,7 @@ function initialize() {
 			}
 		]
 	}
-	];	
+	];
 
 	var mapOptions = {
 		zoom: 13,
