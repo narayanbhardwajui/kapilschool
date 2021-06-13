@@ -2313,4 +2313,14 @@ header .container {
 	font-weight: bold;
 	color: #a8231e;
 }
+.pdf-card {
+	box-shadow: rgb(0 0 0 / 16%) 0px 1px 4px;
+	padding:20px;
+	font-size: 20px;
+	min-height: 85px;
+	cursor: pointer;
+	display: grid;
+	place-content: center;
+	text-align: center;
+}
 /*css overiding*/
