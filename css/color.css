@@ -35,7 +35,7 @@
 .ct_popular_course > ul > li:hover .ct_proj_des > a,
 .ct_hreg_wrap ul.countdown li span
 {
-	color:#90a94c;	
+	color:#a8231e;
 }
 
 
@@ -75,7 +75,7 @@
 .ct_hreg_wrap > a:hover,
 .ct_banner_caption > a.active
 {
-	background-color:#90a94c;	
+	background-color:#a8231e;
 }
 
 
@@ -100,7 +100,7 @@
 .ct_pagination ul li a:hover,
 .ct_hreg_wrap > a:hover
 {
-	border-color:#90a94c;	
+	border-color:#a8231e;
 }
 
 
@@ -169,7 +169,7 @@
 	-webkit-transition:all 0.3s ease-in-out;
 	-moz-transition:all 0.3s ease-in-out;
 	-o-transition:all 0.3s ease-in-out;
-	-moz-transition:all 0.3s ease-in-out;	
+	-moz-transition:all 0.3s ease-in-out;
 }
 
 
